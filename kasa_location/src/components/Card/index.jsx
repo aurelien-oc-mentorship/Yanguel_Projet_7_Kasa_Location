@@ -9,7 +9,7 @@ function Card(props) {
   return (
     <a href={`#${id}`}>
       <article style={bgImg} className={styles.card}>
-        <p>{title}</p>
+        <p className="titleCard">{title}</p>
       </article>
     </a>
   )

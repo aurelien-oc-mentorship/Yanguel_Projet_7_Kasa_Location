@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 
 // Importe les différentes pages
 import Home from './pages/Home'
+import Header from './components/Header'
 
 // Importe les fichiers CSS
 import './styles/headerHome.css'
