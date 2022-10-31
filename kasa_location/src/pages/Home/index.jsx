@@ -1,4 +1,10 @@
+import { useEffect } from 'react'
+import data from './../../data/data.json'
+
 function Home() {
+  useEffect(() => {
+    console.log(data)
+  })
   return (
     <div className="App">
       <header className="App-header">
