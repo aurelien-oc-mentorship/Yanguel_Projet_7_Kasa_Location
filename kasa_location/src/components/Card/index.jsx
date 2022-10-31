@@ -1,7 +1,6 @@
 import styles from './Card.module.css'
 
 function Card(props) {
-  console.log(props)
   const { id, image, title } = props
   const bgImg = {
     backgroundImage: `url(${image})`,

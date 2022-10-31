@@ -1,10 +1,13 @@
 // Importe les différents outils de React
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+// Importe React-Router
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // Importe les différentes pages
 import Home from './pages/Home'
-import Header from './components/Header'
+
+import Header from './components/Header/index'
 
 // Importe les fichiers CSS
 import './styles/headerHome.css'
@@ -13,6 +16,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    <Home />
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/apropos">
+          <aPropos />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>
 )
