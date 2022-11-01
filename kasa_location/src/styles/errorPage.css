@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 .containerError {
   display: flex;
   flex-direction: column;
@@ -9,10 +15,12 @@
   margin-top: 10%;
 }
 .textError {
+  font-family: Montserrat;
   color: #ff6060;
   font-size: 36px;
 }
 .linktext {
+  font-family: Montserrat;
   margin-top: 10%;
   font-size: 18px;
   padding-bottom: 50px;

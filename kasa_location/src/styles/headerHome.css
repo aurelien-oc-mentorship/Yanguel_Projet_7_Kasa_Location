@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 .App-header {
   color: #ff6060;
   height: 60px;
@@ -15,10 +21,12 @@
   font-size: 24px;
 }
 .navAcceuil {
+  font-family: Montserrat;
   margin-right: 60px;
   text-decoration: none;
 }
 .navAPropos {
+  font-family: Montserrat;
   text-decoration: none;
 }
 .navAcceuil:hover {

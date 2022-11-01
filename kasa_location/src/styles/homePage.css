@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .cards {
+  font-family: Montserrat;
   background-color: #f6f6f6;
-  padding: 20px;
   margin-right: 50px;
   margin-left: 50px;
   display: flex;
@@ -9,7 +16,17 @@
   align-content: space-around;
   border-radius: 30px;
 }
-
+.titleCard {
+  margin-left: 20px;
+  color: #ff6060;
+  width: 150px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #ff6060;
+}
 .bannerImg {
   width: auto;
   display: flex;
@@ -26,6 +43,7 @@
   filter: brightness(70%);
 }
 .textImg {
+  font-family: Montserrat;
   position: absolute;
   top: 20%;
   color: #ffff;

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 footer {
   width: 100%;
   background-color: black;
@@ -13,6 +19,7 @@ footer {
   margin-top: 40px;
 }
 .rightReserved {
+  font-family: Montserrat;
   color: #ffff;
   font-size: 25px;
 }
