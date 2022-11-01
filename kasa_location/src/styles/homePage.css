@@ -1,8 +1,8 @@
 .cards {
   background-color: #f6f6f6;
+  padding: 20px;
   margin-right: 50px;
   margin-left: 50px;
-  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -11,6 +11,7 @@
 }
 
 .bannerImg {
+  width: auto;
   display: flex;
   justify-content: center;
   margin: 50px;
@@ -19,7 +20,7 @@
 }
 .imgHome {
   border-radius: 25px;
-  width: 1513px;
+  width: 100%;
   height: 223px;
   object-fit: cover;
   filter: brightness(70%);

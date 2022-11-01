@@ -9,7 +9,7 @@ import Home from './pages/Home'
 import Error from './pages/Error'
 
 import Header from './components/Header/index'
-
+import Footer from './components/Footer'
 // Importe les fichiers CSS
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -29,6 +29,7 @@ root.render(
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   </React.StrictMode>
 )

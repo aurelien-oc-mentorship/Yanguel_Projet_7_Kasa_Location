@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.imgEtText {
+  text-align: center;
+}
+.logoKasaWhite {
+  width: 122px;
+  height: 40px;
+  margin-top: 40px;
+}
+.rightReserved {
+  color: #ffff;
+  font-size: 25px;
+}
