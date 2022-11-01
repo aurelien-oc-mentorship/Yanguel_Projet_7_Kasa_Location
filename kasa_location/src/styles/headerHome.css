@@ -2,5 +2,31 @@
   color: #ff6060;
   height: 60px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.App-logo {
+  height: 68px;
+}
+.navHome {
+  font-size: 24px;
+}
+.navAcceuil {
+  margin-right: 60px;
+  text-decoration: none;
+}
+.navAPropos {
+  text-decoration: none;
+}
+.navAcceuil:hover {
+  text-decoration: underline;
+}
+.navAPropos:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #ff6060;
 }

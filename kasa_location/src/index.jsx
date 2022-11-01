@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // Importe les différentes pages
 import Home from './pages/Home'
+import Error from './components/Error'
 
 import Header from './components/Header/index'
 
 // Importe les fichiers CSS
-import './styles/headerHome.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -24,6 +24,9 @@ root.render(
         </Route>
         <Route path="/apropos">
           <aPropos />
+        </Route>
+        <Route>
+          <Error />
         </Route>
       </Switch>
     </Router>

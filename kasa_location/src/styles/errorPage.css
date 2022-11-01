@@ -1,0 +1,18 @@
+.containerError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.logoError {
+  margin-top: 10%;
+}
+.textError {
+  color: #ff6060;
+  font-size: 36px;
+}
+.linktext {
+  margin-top: 10%;
+  font-size: 18px;
+}

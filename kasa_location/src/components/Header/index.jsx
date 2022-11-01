@@ -1,13 +1,18 @@
 import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
+import '../../styles/headerHome.css'
 
 function Header() {
   return (
     <header className="App-header">
       <img src={Logo} className="App-logo" alt="logo" />
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/apropos">A Propos</Link>
+      <nav className="navHome">
+        <Link to="/" className="navAcceuil">
+          Accueil
+        </Link>
+        <Link to="/apropos" className="navAPropos">
+          A Propos
+        </Link>
       </nav>
     </header>
   )
