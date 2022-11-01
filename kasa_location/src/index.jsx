@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // Importe les différentes pages
 import Home from './pages/Home'
-import Error from './components/Error'
+import Error from './pages/Error'
 
 import Header from './components/Header/index'
 

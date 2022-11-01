@@ -1,0 +1,32 @@
+.cards {
+  background-color: #f6f6f6;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border-radius: 30px;
+}
+
+.bannerImg {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  border-radius: 25px;
+  position: relative;
+}
+.imgHome {
+  border-radius: 25px;
+  width: 1513px;
+  height: 223px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.textImg {
+  position: absolute;
+  top: 20%;
+  color: #ffff;
+  font-size: 48px;
+}
