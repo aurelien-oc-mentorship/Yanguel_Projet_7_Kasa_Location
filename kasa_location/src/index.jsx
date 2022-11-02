@@ -7,10 +7,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // Importe les différentes pages
 import Home from './pages/Home'
 import Error from './pages/Error'
+import Apropos from './pages/apropos/index'
 
 import Header from './components/Header/index'
 import Footer from './components/Footer'
 // Importe les fichiers CSS
+import './styles/normalize.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -22,8 +24,8 @@ root.render(
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/apropos">
-          <aPropos />
+        <Route path="/Apropos">
+          <Apropos />
         </Route>
         <Route>
           <Error />

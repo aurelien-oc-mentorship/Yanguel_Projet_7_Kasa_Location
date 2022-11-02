@@ -4,12 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+.error {
+  font-family: Montserrat;
+  color: #ff6060;
+  font-size: 200px;
+}
 .containerError {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
 }
 .logoError {
   margin-top: 10%;
