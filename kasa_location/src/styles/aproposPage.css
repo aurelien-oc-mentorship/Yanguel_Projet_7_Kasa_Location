@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 .bannerApropos {
   width: auto;
   display: flex;
@@ -12,4 +18,33 @@
   height: 223px;
   object-fit: cover;
   filter: brightness(70%);
+}
+.listeApropos {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.fiabilite,
+.respect,
+.service,
+.responsabilite {
+  background-color: #ff6060;
+  color: white;
+  height: 47px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.textFiabilite,
+.textRespect,
+.textService,
+.textResponsabilite {
+  font-size: 24px;
 }
