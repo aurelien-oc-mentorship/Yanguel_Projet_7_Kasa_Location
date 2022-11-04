@@ -19,32 +19,40 @@
   object-fit: cover;
   filter: brightness(70%);
 }
-.listeApropos {
+
+.collapsible .content {
+  padding: 6px;
+  background-color: #f6f6f6;
+  color: #f06060;
+}
+.content2 {
+  width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  color: #f06060;
+}
+.collapsible .header {
+  background-color: #f06060;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.collapsible {
   font-family: Montserrat;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
 }
-.fiabilite,
-.respect,
-.service,
-.responsabilite {
-  background-color: #ff6060;
+.header {
+  font-size: 24px;
   color: white;
-  height: 47px;
+  height: 35px;
   width: 80%;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   border-radius: 5px;
   justify-content: space-between;
-  padding-right: 20px;
-}
-.textFiabilite,
-.textRespect,
-.textService,
-.textResponsabilite {
-  font-size: 24px;
 }

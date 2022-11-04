@@ -21,9 +21,6 @@
   color: #ffffff;
   width: 150px;
 }
-a {
-  text-decoration: none;
-}
 a:visited {
   color: #ff6060;
 }
@@ -48,4 +45,5 @@ a:visited {
   top: 20%;
   color: #ffff;
   font-size: 48px;
+  text-align: center;
 }

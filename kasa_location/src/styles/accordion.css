@@ -1,0 +1,50 @@
+.accordions {
+  border: 1px solid;
+}
+.accordionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f06060;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.accordionTitle:hover,
+.active .accordionTitle {
+  cursor: pointer;
+}
+.accordionIcon {
+  position: relative;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+}
+.accordionIcon::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+.active .accordionIcon::before {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+.accordionContent {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.1s ease-in;
+}
+.active .accordionContent {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  padding: 1rem;
+  opacity: 1;
+}
