@@ -1,39 +1,49 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.centerAccordions {
+  display: flex;
+  justify-content: center;
+}
 .accordions {
-  border: 1px solid;
+  font-family: 'Montserrat';
+  width: 80%;
+}
+.accordion {
+  margin-bottom: 20px;
 }
 .accordionTitle {
+  font-size: 20px;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f06060;
   padding: 1rem;
-  font-weight: bold;
   border-radius: 5px;
 }
 .accordionTitle:hover,
 .active .accordionTitle {
   cursor: pointer;
 }
-.accordionIcon {
-  position: relative;
-  width: 10px;
-  height: 1px;
-  background-color: black;
-}
 .accordionIcon::before {
   position: absolute;
   content: '';
   width: 10px;
   height: 1px;
-  background-color: black;
+  background-color: white;
   transform: rotate(180deg);
   transition: all 0.2s;
 }
 .active .accordionIcon::before {
   transform: rotate(0deg);
-  opacity: 0;
 }
 .accordionContent {
+  background-color: #f7f7f7;
+  color: #f06060;
   visibility: hidden;
   height: 0;
   opacity: 0;

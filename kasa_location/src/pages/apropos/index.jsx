@@ -13,12 +13,15 @@ function Apropos() {
       <div className="bannerApropos">
         <img src={imgApropos} className="imgBanner" alt="Un paysage" />
       </div>
-      <div className="App">
+      <div className="centerAccordions">
         <div className="accordions">
-          <Accordion title="titre1" content="contenu1" />
-          <Accordion title="titre2" content="contenu2" />
-          <Accordion title="titre3" content="contenu3" />
-          <Accordion title="titre4" content="contenu4" />
+          <Accordion title="Fiabilité" content="contenu1" />
+          <Accordion
+            title="Respect"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          />
+          <Accordion title="Service" content="contenu3" />
+          <Accordion title="Responsabilité" content="contenu4" />
         </div>
       </div>
       <div className="collapsible">
