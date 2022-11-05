@@ -29,17 +29,19 @@
 .active .accordionTitle {
   cursor: pointer;
 }
-.accordionIcon::before {
+.fa-chevron-down {
+  padding-right: 20px;
+}
+.fa-chevron-down::before {
   position: absolute;
-  content: '';
-  width: 10px;
-  height: 1px;
-  background-color: white;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: all 0.2s;
 }
-.active .accordionIcon::before {
-  transform: rotate(0deg);
+.accordionIcon {
+  display: flex;
+}
+.active .fa-chevron-down::before {
+  transform: rotate(180deg);
 }
 .accordionContent {
   background-color: #f7f7f7;

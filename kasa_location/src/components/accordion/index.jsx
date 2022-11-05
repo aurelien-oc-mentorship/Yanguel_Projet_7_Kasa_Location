@@ -1,8 +1,10 @@
 import React from 'react'
 import '../../styles/accordion.css'
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+;<script
+  src="https://kit.fontawesome.com/e4ab2d9fc1.js"
+  crossorigin="anonymous"
+></script>
 function Accordion({ title, content }) {
   const [active, setActive] = useState(false)
   const handleToggle = (e) => {
@@ -13,7 +15,7 @@ function Accordion({ title, content }) {
       <div className="accordionTitle" onClick={handleToggle}>
         {title}
         <span className="accordionIcon">
-          <FontAwesomeIcon icon="fa-sharp fa-solid fa-chevron-down" />
+          <i class="fa-sharp fa-solid fa-chevron-down fa-lg "></i>
         </span>
       </div>
       <div className="accordionContent">{content}</div>
