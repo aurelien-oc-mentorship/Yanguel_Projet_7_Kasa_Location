@@ -6,7 +6,7 @@ function Card(props) {
     backgroundImage: `url(${image})`,
   }
   return (
-    <a href="http://localhost:3000/fiche_logement/$`{id}`">
+    <a href={`http://localhost:3000/fiche_logement/${id}`}>
       <article style={bgImg} className={styles.card}>
         <p className="titleCard">{title}</p>
       </article>

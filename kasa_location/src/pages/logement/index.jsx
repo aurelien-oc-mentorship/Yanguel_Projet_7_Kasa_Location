@@ -1,10 +1,18 @@
+import { useParams } from 'react-router-dom'
+import data from './../../data/data.json'
+import Error from '../Error'
 function Logement() {
-  return (
+  let { id } = useParams()
+  const logement = data.find((elt) => elt.id === id)
+  console.log(logement)
+  return logement ? (
     <section>
       <div>
-        <h1> ICI LE LOGEMENT SELECTIONNER </h1>
+        <h1> {logement.title} </h1>
       </div>
     </section>
+  ) : (
+    <Error />
   )
 }
 

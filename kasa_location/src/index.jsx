@@ -17,7 +17,6 @@ import './styles/normalize.css'
 
 let idLogement = window.location.hash
 console.log(idLogement)
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
@@ -30,7 +29,7 @@ root.render(
         <Route path="/Apropos">
           <Apropos />
         </Route>
-        <Route path="/Logement">
+        <Route path="/fiche_logement/:id">
           <Logement />
         </Route>
         <Route>

@@ -1,13 +1,10 @@
 import React from 'react'
 import imgApropos from '../../assets/imageApropos.png'
 import '../../styles/aproposPage.css'
-import useCollapse from 'react-collapsed'
 import Accordion from '../../components/accordion'
 import '../../styles/accordion.css'
 // import Vectordown from '../../assets/Vectordown.png'
 function Apropos() {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
-
   return (
     <section className="containerApropos">
       <div className="bannerApropos">
@@ -15,91 +12,24 @@ function Apropos() {
       </div>
       <div className="centerAccordions">
         <div className="accordions">
-          <Accordion title="Fiabilité" content="contenu1" />
+          <Accordion
+            title="Fiabilité"
+            content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+          />
           <Accordion
             title="Respect"
             content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           />
-          <Accordion title="Service" content="contenu3" />
-          <Accordion title="Responsabilité" content="contenu4" />
+          <Accordion
+            title="Service"
+            content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+          />
+          <Accordion
+            title="Sécurité"
+            content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+          />
         </div>
       </div>
-      <div className="collapsible">
-        <div className="header" {...getToggleProps({})}>
-          {isExpanded ? 'Fiabilité' : 'Fiabilité'}
-        </div>
-        <div {...getCollapseProps()}>
-          <div className="content">
-            Now you can see the hidden content. <br />
-            <br />
-            Click again to hide...
-          </div>
-        </div>
-        <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Respect' : 'Respect'}
-        </div>
-        <div {...getCollapseProps()}>
-          <div className="content">
-            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-            comportement discriminatoire ou de perturbation du voisinage
-            entraînera une exclusion de notre plateforme.
-          </div>
-        </div>
-        <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Service' : 'Service'}
-        </div>
-        <div {...getCollapseProps()}>
-          <div className="content">
-            Now you can see the hidden content. <br />
-            <br />
-            Click again to hide...
-          </div>
-        </div>
-        <div className="header" {...getToggleProps()}>
-          {isExpanded ? 'Responsabilité' : 'Responsabilité'}
-        </div>
-        <div {...getCollapseProps()}>
-          <div className="content">
-            Now you can see the hidden content. <br />
-            <br />
-            Click again to hide...
-          </div>
-        </div>
-      </div>
-      {/*<div className="listeApropos">
-        <div className="fiabilite">
-          <p className="textFiabilite"> Fiabilité </p>
-          <img
-            src={Vectordown}
-            className="Vectordown"
-            alt="fleche vers le bas"
-          ></img>
-        </div>
-        <div className="respect">
-          <p className="textRespect">Respect </p>
-          <img
-            src={Vectordown}
-            className="Vectordown"
-            alt="fleche vers le bas"
-          ></img>
-        </div>
-        <div className="service">
-          <p className="textService"> Service </p>
-          <img
-            src={Vectordown}
-            className="Vectordown"
-            alt="fleche vers le bas"
-          ></img>
-        </div>
-        <div className="responsabilite">
-          <p className="textResponsabilite"> Responsabilité </p>
-          <img
-            src={Vectordown}
-            className="Vectordown"
-            alt="fleche vers le bas"
-          ></img>
-        </div>
-  </div> */}
     </section>
   )
 }

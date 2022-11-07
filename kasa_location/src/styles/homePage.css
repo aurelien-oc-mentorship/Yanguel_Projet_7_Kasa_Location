@@ -18,6 +18,7 @@
 }
 .titleCard {
   margin-left: 20px;
+  background-color: black;
   color: #ffffff;
   width: 150px;
 }
@@ -28,6 +29,7 @@ a:visited {
   width: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 50px;
   border-radius: 25px;
   position: relative;
@@ -41,9 +43,39 @@ a:visited {
 }
 .textImg {
   font-family: Montserrat;
-  position: absolute;
   top: 20%;
   color: #ffff;
   font-size: 48px;
   text-align: center;
+}
+.divTextImg {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bannerImg {
+    margin: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+  .divTextImg {
+    margin-left: 10px;
+  }
+  .textImg {
+    top: 0px;
+    font-size: 25px;
+  }
+  .cards {
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }

@@ -12,7 +12,9 @@ function Home() {
     <div className="App">
       <section className="bannerImg">
         <img src={imgHome} className="imgHome" alt="Un paysage" />
-        <h1 className="textImg">Chez vous, partout et ailleurs</h1>
+        <div className="divTextImg">
+          <h1 className="textImg">Chez vous, partout et ailleurs</h1>
+        </div>
       </section>
       <section className="cards">
         {data.map((property, index) => {

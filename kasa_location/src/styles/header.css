@@ -38,3 +38,27 @@
 a:visited {
   color: #ff6060;
 }
+
+/* Responsive Téléphone */
+
+@media screen and (max-width: 767px) {
+  .App-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .App-logo {
+    height: 47px;
+  }
+  .navHome {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+  }
+  .navAcceuil {
+    margin-right: 0px;
+  }
+}

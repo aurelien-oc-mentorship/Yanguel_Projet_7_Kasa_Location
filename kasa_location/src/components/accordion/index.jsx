@@ -15,7 +15,7 @@ function Accordion({ title, content }) {
       <div className="accordionTitle" onClick={handleToggle}>
         {title}
         <span className="accordionIcon">
-          <i class="fa-sharp fa-solid fa-chevron-down fa-lg "></i>
+          <i className="fa-sharp fa-solid fa-chevron-down fa-lg "></i>
         </span>
       </div>
       <div className="accordionContent">{content}</div>
