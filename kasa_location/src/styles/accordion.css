@@ -11,6 +11,7 @@
 .accordions {
   font-family: 'Montserrat';
   width: 80%;
+  margin-bottom: 50px;
 }
 .accordion {
   margin-bottom: 20px;

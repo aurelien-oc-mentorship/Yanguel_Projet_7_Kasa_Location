@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../styles/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+section {
+  font-family: 'Montserrat';
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bannerLogement {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+
+  margin-top: 20px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 415px;
+}
+.bannerLogement img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#precedent,
+#suivant {
+  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+}
+#precedent {
+  left: 1rem;
+}
+#suivant {
+  right: 1rem;
+}
+#suivant:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+#precedent:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.picturesLogement {
+}
+
+.titleAndHost {
+  display: flex;
+  justify-content: space-between;
+  color: #f06060;
+}
+.tags {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+}
+.liTags {
+  font-size: 14px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f06060;
+  color: white;
+  height: 25px;
+  width: 150px;
+  border-radius: 10px;
+}
+.accordionsLogement {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5em;
+}
+.accordionDescription {
+  width: 45%;
+}
+.accordionEquipement {
+  width: 45%;
+}
+.divHost {
+  display: flex;
+  align-items: center;
+}
+.equipementAccordion {
+  list-style: none;
+  line-height: 1.5em;
+}
+.portraitHote {
+  border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;
+  width: 80px;
+  margin-left: 10px;
+}

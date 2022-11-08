@@ -3,6 +3,7 @@ import data from './../../data/data.json'
 import Card from '../../components/Card'
 import imgHome from '../../assets/imageHome.png'
 import '../../styles/homePage.css'
+import '../../styles/normalize.css'
 
 function Home() {
   useEffect(() => {
