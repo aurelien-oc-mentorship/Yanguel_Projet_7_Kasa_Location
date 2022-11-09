@@ -18,7 +18,7 @@ function Logement() {
   const logement = data.find((elt) => elt.id === id)
 
   return logement ? (
-    <section>
+    <section id="sectionLogement">
       <Slider />
       <div className="titleAndHost">
         <div className="titleAndLocation">
@@ -46,7 +46,12 @@ function Logement() {
       <div className="centerAccordions">
         <div className="accordions accordionsLogement">
           <div className="accordionDescription">
-            <Accordion title="Description" content={logement.description} />
+            <Accordion
+              title="Description"
+              content={
+                <p className="descriptionAccordions">{logement.description}</p>
+              }
+            />
           </div>
           <div className="accordionEquipement">
             <Accordion

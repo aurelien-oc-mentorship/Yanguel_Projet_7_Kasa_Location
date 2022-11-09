@@ -18,7 +18,7 @@ function Accordion({ title, content }) {
           <i className="fa-sharp fa-solid fa-chevron-down fa-lg "></i>
         </span>
       </div>
-      <div className="accordionContent">{content}</div>
+      <div className="accordionContent logementheight">{content}</div>
     </div>
   )
 }

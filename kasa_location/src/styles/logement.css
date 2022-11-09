@@ -4,63 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
-section {
+#sectionLogement {
   font-family: 'Montserrat';
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.bannerLogement {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-
-  margin-top: 20px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 415px;
+.logementheight {
+  min-height: 200px;
 }
-.bannerLogement img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.bannerLogement img.active {
-  opacity: 1;
-}
-#precedent,
-#suivant {
-  color: black;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%);
-  cursor: pointer;
-}
-#precedent {
-  left: 1rem;
-}
-#suivant {
-  right: 0rem;
-}
-#suivant:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-#precedent:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
 .titleAndHost {
   display: flex;
   justify-content: space-between;
@@ -68,6 +19,7 @@ section {
 }
 .tags {
   display: flex;
+  margin-bottom: 20px;
   padding: 0px;
   list-style: none;
 }
@@ -88,6 +40,7 @@ section {
   display: flex;
   justify-content: space-between;
   line-height: 1.5em;
+  margin-bottom: 0px;
 }
 .accordionDescription {
   width: 45%;
@@ -102,6 +55,7 @@ section {
 .equipementAccordion {
   list-style: none;
   line-height: 1.5em;
+  padding-left: 0px;
 }
 .portraitHote {
   border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;
