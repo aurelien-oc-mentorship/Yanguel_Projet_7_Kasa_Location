@@ -29,6 +29,12 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.bannerLogement img.active {
+  opacity: 1;
 }
 #precedent,
 #suivant {
@@ -36,12 +42,13 @@ section {
   position: absolute;
   top: 50%;
   transform: translate(-50%);
+  cursor: pointer;
 }
 #precedent {
   left: 1rem;
 }
 #suivant {
-  right: 1rem;
+  right: 0rem;
 }
 #suivant:hover {
   transform: scale(1.1);
@@ -52,8 +59,6 @@ section {
   transform: scale(1.1);
   opacity: 1;
   transition: all 0.3s ease;
-}
-.picturesLogement {
 }
 
 .titleAndHost {
