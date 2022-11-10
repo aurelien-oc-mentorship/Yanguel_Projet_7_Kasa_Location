@@ -6,6 +6,7 @@ import '../../styles/logement.css'
 import Accordion from '../../components/accordion'
 import '../../styles/accordion.css'
 import Slider from '../../components/carrousel'
+import Rate from '../../components/Stars/'
 ;<script
   src="https://kit.fontawesome.com/e4ab2d9fc1.js"
   crossorigin="anonymous"
@@ -14,8 +15,11 @@ import Slider from '../../components/carrousel'
 function Logement() {
   // Je récupere l'id dans l'URL
   let { id } = useParams()
+
   // Cette variable me permet de chercher un élement lié à l'id utilisé dans le format json.
   const logement = data.find((elt) => elt.id === id)
+
+  //////////////////
 
   return logement ? (
     <section id="sectionLogement">
@@ -35,12 +39,16 @@ function Logement() {
         </div>
         <div className="divHost">
           {' '}
-          {logement.host.name}{' '}
-          <img
-            src={logement.host.picture}
-            alt="Portrait de l'hote"
-            className="portraitHote"
-          ></img>
+          <div className="pictureAndName">
+            {logement.host.name}
+
+            <img
+              src={logement.host.picture}
+              alt="Portrait de l'hote"
+              className="portraitHote"
+            ></img>
+          </div>
+          <Rate logement={logement.rating} />
         </div>
       </div>
       <div className="centerAccordions">

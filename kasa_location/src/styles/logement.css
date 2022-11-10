@@ -4,22 +4,27 @@
   font-weight: normal;
   font-style: normal;
 }
+h1 {
+  margin: 0px;
+}
 #sectionLogement {
   font-family: 'Montserrat';
   padding-left: 80px;
   padding-right: 80px;
 }
-.logementheight {
-  min-height: 200px;
-}
 .titleAndHost {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   color: #f06060;
+}
+.pictureAndName {
+  display: flex;
+  align-items: center;
 }
 .tags {
   display: flex;
-  margin-bottom: 20px;
   padding: 0px;
   list-style: none;
 }
@@ -35,12 +40,19 @@
   width: 150px;
   border-radius: 10px;
 }
+ul,
+.tags {
+  margin-bottom: 0px;
+}
 .accordionsLogement {
   width: auto;
   display: flex;
   justify-content: space-between;
   line-height: 1.5em;
   margin-bottom: 0px;
+}
+.descriptionAccordions {
+  min-height: 200px;
 }
 .accordionDescription {
   width: 45%;
@@ -51,8 +63,10 @@
 .divHost {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .equipementAccordion {
+  min-height: 200px;
   list-style: none;
   line-height: 1.5em;
   padding-left: 0px;
