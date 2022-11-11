@@ -1,15 +1,35 @@
 import styles from './Card.module.css'
-
 function Card(props) {
   const { id, image, title } = props
-  const bgImg = {
-    backgroundImage: `url(${image})`,
-  }
   return (
-    <a href={`http://localhost:3000/fiche_logement/${id}`}>
-      <article style={bgImg} className={styles.card}>
+    <a
+      href={`http://localhost:3000/fiche_logement/${id}`}
+      className="photoLogement"
+    >
+      <article
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+                            url(${image})`,
+        }}
+        className={styles.card}
+      >
         <p className="titleCard">{title}</p>
       </article>
+
+      {/* AUTRE POSSIBILITE */}
+      {/*<section className={styles.card}>
+        <img
+          src={`${image}`}
+          alt="Cover du logement"
+          className="photoCover"
+  ></img>*/}
+      {/*/ {{ Essai mais ne fonctionne pas
+         backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+                            url(${(image)})`
+         }}> */}
+      {/* <p className="titleCard">{title}</p>
+      </section>
+        */}
     </a>
   )
 }
