@@ -24,8 +24,11 @@
   color: #ff6060;
   font-size: 36px;
 }
+.link {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .linktext {
   font-family: Montserrat;
-  margin-top: 10%;
   font-size: 18px;
 }

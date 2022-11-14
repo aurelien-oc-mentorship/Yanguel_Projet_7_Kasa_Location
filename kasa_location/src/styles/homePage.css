@@ -8,8 +8,7 @@
 .cards {
   font-family: Montserrat;
   background-color: #f6f6f6;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin: 0px 80px 80px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -39,7 +38,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 50px 80px 50px 80px;
   border-radius: 25px;
   position: relative;
 }

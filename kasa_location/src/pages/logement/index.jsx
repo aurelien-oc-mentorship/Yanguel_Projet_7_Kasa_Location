@@ -26,8 +26,8 @@ function Logement() {
       <Slider />
       <div className="titleAndHost">
         <div className="titleAndLocation">
-          <h1> {logement.title} </h1>
-          <p>{logement.location}</p>
+          <h1 className="logementTitle"> {logement.title} </h1>
+          <p className="logementLocation">{logement.location}</p>
           <ul className="tags">
             {/* Création d'un li pour chaque tags */}
             {logement.tags.map((li, element) => (
@@ -40,7 +40,7 @@ function Logement() {
         <div className="divHost">
           {' '}
           <div className="pictureAndName">
-            {logement.host.name}
+            <p className="hostName">{logement.host.name}</p>
 
             <img
               src={logement.host.picture}

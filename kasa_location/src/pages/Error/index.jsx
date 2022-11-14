@@ -7,9 +7,11 @@ function Error() {
       <h2 className="textError">
         Oups! La page que vous demandez n'existe pas.
       </h2>
-      <p className="linktext">
-        <Link to="/">Retourner sur la page d'acceuil</Link>
-      </p>
+      <div className="link">
+        <p className="linktext">
+          <Link to="/">Retourner sur la page d'acceuil</Link>
+        </p>
+      </div>
     </div>
   )
 }

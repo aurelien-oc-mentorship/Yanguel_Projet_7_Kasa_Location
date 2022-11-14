@@ -4,13 +4,17 @@
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  margin: 0px;
-}
 #sectionLogement {
   font-family: 'Montserrat';
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.logementTitle {
+  font-size: 36px;
+  margin: 0px;
+}
+.logementLocation {
+  font-size: 18px;
 }
 .titleAndHost {
   display: flex;
@@ -22,6 +26,14 @@ h1 {
 .pictureAndName {
   display: flex;
   align-items: center;
+  font-size: 18px;
+}
+.hostName {
+  width: min-content;
+  text-align: end;
+}
+.stars {
+  margin-top: 20px;
 }
 .tags {
   display: flex;
@@ -43,6 +55,7 @@ h1 {
 ul,
 .tags {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 .accordionsLogement {
   width: auto;
@@ -53,6 +66,8 @@ ul,
 }
 .descriptionAccordions {
   min-height: 200px;
+  font-size: 18px;
+  margin: 0px;
 }
 .accordionDescription {
   width: 45%;
@@ -62,7 +77,7 @@ ul,
 }
 .divHost {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 }
 .equipementAccordion {
@@ -70,6 +85,7 @@ ul,
   list-style: none;
   line-height: 1.5em;
   padding-left: 0px;
+  font-size: 18px;
 }
 .portraitHote {
   border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;

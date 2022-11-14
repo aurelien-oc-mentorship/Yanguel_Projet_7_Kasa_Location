@@ -23,10 +23,6 @@ function Card(props) {
           alt="Cover du logement"
           className="photoCover"
   ></img>*/}
-      {/*/ {{ Essai mais ne fonctionne pas
-         backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
-                            url(${(image)})`
-         }}> */}
       {/* <p className="titleCard">{title}</p>
       </section>
         */}
